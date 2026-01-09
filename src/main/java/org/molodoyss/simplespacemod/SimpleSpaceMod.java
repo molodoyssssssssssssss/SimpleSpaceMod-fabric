@@ -32,7 +32,7 @@ public class SimpleSpaceMod implements ModInitializer {
                         AttributeContainer attributes = player.getAttributes();
                         EntityAttributeInstance gravity = attributes.getCustomInstance(EntityAttributes.GRAVITY);
                         if (gravity != null) {
-                            gravity.setBaseValue(0D);
+                            gravity.setBaseValue(0.003065D);
                         }
                         if ((!player.hasStatusEffect(StatusEffects.WATER_BREATHING))) {
                             player.damage(serverWorld, drown[0], (float) (player.getY() / 1000F));
